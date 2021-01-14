@@ -57,7 +57,7 @@ An extra *profile* block in the ```pom.xml``` declares two build profiles and as
     </profiles>
 ```
 
-Above configuration sets **Dev* as default. If no further profile information is provided at startup, maven will apply the **Dev** configuration.
+Above configuration sets **Dev** as default. If no further profile information is provided at startup, maven will apply the **Dev** configuration.
 
 ## Usage
 
