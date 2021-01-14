@@ -15,7 +15,7 @@ Maven profiles can be used to toggle specific build configurations and change se
 The context for this demo project is a slightly modified version of the TimeService, a minimal RESTful service with just only a single resource: ```/time```.  
 A ```GET``` request on that resource is answered with a time-string.
 
-We assume that in the service shall run on a different port - depending on its current environment:
+We assume that the service must run on different ports - depending on its current environment:
 
  * **Dev**: The service runs on port 8081 and returns a dummy string: "Teatime".
  * **Prod**: The service runs on port 8082 and returns the actual time.
