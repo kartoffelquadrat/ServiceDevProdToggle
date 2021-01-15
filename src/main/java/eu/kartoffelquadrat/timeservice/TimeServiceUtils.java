@@ -16,8 +16,13 @@ import java.util.Date;
 @Component
 public class TimeServiceUtils {
 
+    // This property is only declared in application-prod.properties
     @Value("${date.format}")
     private String dateFormat;
+
+    // This property is declared in the common application.properties file.
+    @Value("${time.preamble}")
+    String preamble;
 
     /**
      * Internal service functionality to generate a time string for the current time. Not directly exposed to others via
@@ -29,9 +34,9 @@ public class TimeServiceUtils {
     public String lookUpCurrentTime() {
 
         if (dateFormat.isEmpty())
-            return "It's about teatime! (Hello from Dev)\n";
+            return preamble + "It's about teatime! (Hello from Dev)\n";
 
         SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
-        return sdf.format(new Date())+"\n";
+        return preamble + sdf.format(new Date())+"\n";
     }
 }

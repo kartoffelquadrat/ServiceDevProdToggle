@@ -4,8 +4,8 @@ A minimal demo project to demonstrate how to switch between Prod/Dev service con
 
 ## About
 
-In real word systems, service configurations change a lot, depending on the deployment environment.
-The most common cases are, a *Development (dev)* and a *Production (Prod)* environment.
+In real word systems, service configurations depending on the deployment environment.
+The most common cases are, a *Development (Dev)* and a *Production (Prod)* environment.
 Maven profiles can be used to toggle specific build configurations and change service behaviour based on associated ```.properties``` files.
 
  > Note: This project is based on configurations described at [medium.com](https://medium.com/@derrya/maven-profile-spring-boot-properties-a34f2b2bb386). This project showcases no additional features and only puts things into a build-and-testable context.
@@ -30,8 +30,10 @@ There are two extra spring boot configurations:
 
  * ```src/main/resources/application-dev.properties```
  * ```src/main/resources/application-prod.properties```
-
+ 
 These files only specify the server port and time-string characteristics.
+Common configurations such as the response preamble remain in the common:  
+```src/main/resources/application.properties```
 
 ### Maven
 
@@ -70,6 +72,7 @@ mvn clean package
 Use the ```-P``` switch to specify the profile to apply:
 
  * **Dev** profile:  
+ ("```-P dev```" is redundant for the default configuration)  
 ```bash
 mvn spring-boot:run
 curl -X GET http://127.0.0.1:8081/time
