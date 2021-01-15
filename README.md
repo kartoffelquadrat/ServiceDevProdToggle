@@ -4,9 +4,9 @@ A minimal demo project to demonstrate how to switch between Prod/Dev service con
 
 ## About
 
-In real word systems, service configurations depending on the deployment environment.
-The most common cases are, a *Development (Dev)* and a *Production (Prod)* environment.
-Maven profiles can be used to toggle specific build configurations and change service behaviour based on associated ```.properties``` files.
+In real word systems service configurations vary with the on the deployment environment.
+The most common environments are *Development (Dev)* and *Production (Prod)*.  
+This repository showcases a minimal service where *Maven Profiles* are used to alternate between prepared configurations for different environments. This is achieved by associating custom ```.property``` files to individual profiles.
 
  > Note: This project is based on configurations described at [medium.com](https://medium.com/@derrya/maven-profile-spring-boot-properties-a34f2b2bb386). This project showcases no additional features and only puts things into a build-and-testable context.
 
