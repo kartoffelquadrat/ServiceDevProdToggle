@@ -32,8 +32,7 @@ There are two extra spring boot configurations:
  * ```src/main/resources/application-prod.properties```
  
 These files only specify the server port and time-string characteristics.
-Common configurations such as the response preamble remain in the common:  
-```src/main/resources/application.properties```
+Common configurations such as the response preamble remain in the default properties file.
 
 ### Maven
 
