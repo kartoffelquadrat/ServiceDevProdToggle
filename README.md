@@ -8,7 +8,7 @@ In real word systems, service configurations often vary by deployment environmen
 For example deployment for *Development (Dev)* may require different server settings than for *Production (Prod)*.  
 This repository showcases a minimal RESTful service where *Maven Profiles* are used to alternate between environment-specific configurations. This is achieved by associating an additional ```.property``` file per maven profile.
 
- > Note: This project is based on configurations described at [medium.com](https://medium.com/@derrya/maven-profile-spring-boot-properties-a34f2b2bb386). This project showcases no additional features and only puts things into a build-and-testable context.
+ > Note: This project is based on configurations described at [medium.com](https://medium.com/@derrya/maven-profile-spring-boot-properties-a34f2b2bb386).
 
 ## Context
 
