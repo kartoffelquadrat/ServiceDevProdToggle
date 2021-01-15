@@ -12,7 +12,7 @@ This repository showcases a minimal RESTful service where *Maven Profiles* are u
 
 ## Context
 
-The context for this demo project is a slightly modified version of the TimeService, a minimal RESTful service with just only a single resource: ```/time```.  
+The context for this demo project is a slightly modified version of the TimeService, a minimal RESTful service with only a single resource: ```/time```.  
 A ```GET``` request on that resource is answered with a time-string.
 
 We assume that the service must run on different ports - depending on its current environment:
